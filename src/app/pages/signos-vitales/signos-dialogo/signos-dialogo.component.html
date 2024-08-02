@@ -1,0 +1,27 @@
+<div>
+
+  <mat-form-field>
+    <input matInput placeholder="Paciente" [(ngModel)]="signos.paciente.nombres" >
+
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Fecha" [(ngModel)]="signos.fecha">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Pulso" [(ngModel)]="signos.ritmo">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Ritmo Respiratorio" [(ngModel)]="signos.pulso">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Temperatura" [(ngModel)]="signos.temperatura">
+  </mat-form-field>
+
+
+</div>
+<button mat-raised-button color="primary" (click)="operar()">Aceptar</button>
+<button mat-raised-button color="accent" (click)="cerrar()">Cancelar</button>
